@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+main {
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 100px;
+}
+.nav {
+    display: flex;
+    gap: 57%;
+    margin-bottom: 50px;
+}
+.logo img {
+    display: block;
+}
+ul {
+    display: flex;
+    gap: 25px;
+    & li {
+        list-style: none;
+        & a {
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: hsl(236, 13%, 42%);
+            text-decoration: none;
+            &:hover {
+                color: hsl(35, 77%, 62%);
+                transition: 1.3s;
+            }
+        }
+    }
+}
+.mid {
+    display: flex;
+    gap: 10px;
+    & .img img {
+        width: 67%;
+    }
+    .right {
+        position: absolute;
+        background-color: hsl(240, 100%, 5%);
+        padding: 15px;
+        width: 300px;
+        left: 73%;
+        & h1 {
+            color: hsl(35, 77%, 62%);
+            margin-bottom: 30px;
+            
+        }
+        & .div {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 50px;
+            & h3 {
+                color: hsl(36, 100%, 99%);
+                font-size: large;
+                &:hover {
+                    color: hsl(35, 77%, 62%);
+                    transition: 1.2s;
+                }
+            }
+            & p {
+                color: hsl(233, 8%, 79%);
+            }
+        }
+    }
+    .left {
+        display: grid;
+        gap: 20px;
+        & .web {
+            display: flex;
+            & h1 {
+                width: 300px;
+                font-size: 50px;
+                color: hsl(240, 100%, 5%);
+            }
+            & div {
+                width: 400px;
+                & p {
+                    color: hsl(233, 8%, 79%);
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    line-height: 20px;
+                    margin-top: 15px;
+                }
+                & button {
+                    width: 150px;
+                    color: hsl(36, 100%, 99%);
+                    text-transform: uppercase;
+                    height: 40px;
+                    background-color: hsl(5, 85%, 63%);
+                    font-size: 15px;
+                    border: none;
+                    margin-top: 20px;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: hsl(240, 100%, 5%);
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+.last {
+    display: flex;
+    margin-top: 50px;
+    gap: 5%;
+    & .li {
+        width: 400px;
+        height: 130px;
+        display: flex;
+        gap: 10px;
+        & div {
+            width: 200px;
+            display: grid;
+            & h1 {
+                color: hsl(233, 8%, 79%);
+                letter-spacing: 2px;
+            }
+            & h4 {
+                color: hsl(240, 100%, 5%);
+                letter-spacing: 2px;
+                &:hover {
+                    color: hsl(5, 85%, 63%);
+                }
+            }
+            & p{
+                letter-spacing: 2px;
+                color: hsl(233, 8%, 79%);
+            }
+        }
+    }
+}
+.mob img {
+    display: none;
+}
+.mm {
+    display: none;
+}
+
+@media screen and (max-width: 765px) {
+    body {
+        min-width: 280px;
+        height: 100%;
+    } 
+    main {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .nav {
+        display: flex;
+        gap: 31.4%;
+        margin-bottom: 50px;
+        width: 94%;
+        height: 100%;
+      & ul {
+        display: none;
+      }
+      & .menu {
+            display: block;
+            border: none;
+                & img {
+                    width: 35px;
+                    height: 30px;
+                }
+      }
+      .ul {
+        display: grid;
+        gap: 15px;
+        position: absolute;
+        height: 40%;
+        width: 80%;
+        text-align: center;
+        margin-top: 20%;
+        margin-left: -30%;
+        padding: 30px;
+        border-radius: 12px;
+        background-color: hsl(0, 0%, 100%);
+        & a {
+            font-size: 22px;
+            text-align: initial;
+            text-decoration: none;
+            color: #000000;
+        }
+        & li {
+            text-align: start;
+            list-style: none;
+        }
+      }
+    }
+    .mid {
+        display: grid;
+        gap: 10px;
+        & .img img {
+            display: none;
+        }
+        & .mob img {
+            display: block;
+            width: 94%;
+        }
+        .right {
+            position: initial;
+            background-color: hsl(240, 100%, 5%);
+            padding: 15px;
+            width: 94%;
+            left: 73%;
+            & h1 {
+                color: hsl(35, 77%, 62%);
+                margin-bottom: 30px;
+                
+            }
+            & .div {
+                display: grid;
+                gap: 10px;
+                margin-bottom: 50px;
+                & h3 {
+
+                    color: hsl(36, 100%, 99%);
+                    font-size: 25px;
+                    &:hover {
+                        color: hsl(35, 77%, 62%);
+                        transition: 1.2s;
+                    }
+                }
+                & p {
+                    letter-spacing: 1.7px;
+                    line-height: 20px;
+                    color: hsl(233, 8%, 79%);
+                    font-size: 18px;
+                }
+            }
+        }
+        .left {
+            display: grid;
+            gap: 20px;
+            & .web {
+                display: grid;
+                & h1 {
+                    width: 300px;
+                    font-size: 50px;
+                    color: hsl(240, 100%, 5%);
+                }
+                & div {
+                    width: 90%;
+                    & p {
+                        color: hsl(233, 8%, 79%);
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        line-height: 20px;
+                        margin-top: 15px;
+                    }
+                    & button {
+                        width: 150px;
+                        color: hsl(36, 100%, 99%);
+                        text-transform: uppercase;
+                        height: 40px;
+                        background-color: hsl(5, 85%, 63%);
+                        font-size: 15px;
+                        border: none;
+                        margin-top: 20px;
+                        font-weight: 500;
+                        margin-bottom: 40px;
+                        &:hover {
+                            background-color: hsl(240, 100%, 5%);
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .last {
+        display: grid;
+        margin-top: 50px;
+        gap: 5%;
+        & .li {
+            width: 94%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            & div {
+                width: 200px;
+                display: grid;
+                & h1 {
+                    color: hsl(233, 8%, 79%);
+                    letter-spacing: 2px;
+                    font-size: 37px;
+                }
+                & h4 {
+                    color: hsl(240, 100%, 5%);
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                    &:hover {
+                        color: hsl(5, 85%, 63%);
+                    }
+                }
+                & p{
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    color: hsl(233, 8%, 79%);
+                }
+            }
+        }
+    }
+    
+}
